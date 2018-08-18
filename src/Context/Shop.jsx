@@ -3,7 +3,7 @@ import axios from "axios";
 
 const ShopContext = React.createContext();
 
-class ShopContextProvider extends Component {
+export class ShopContextProvider extends Component {
   state = {
     products: []
   };
