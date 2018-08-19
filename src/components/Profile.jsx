@@ -4,8 +4,13 @@ import ProfileStyle from "../assets/jss/components/ProfileStyle";
 
 const Profile = ({ classes }) => (
   <div className={classes.root}>
-    <Paper elevation={0} className={classes.paper}>
-      <Grid container>
+    <Paper elevation={1} className={classes.paper}>
+      <Grid
+        container
+        alignItems="center"
+        justify="space-around"
+        className={classes.container}
+      >
         <Grid item>
           <Avatar
             alt="derrick's profile"

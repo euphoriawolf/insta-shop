@@ -8,8 +8,15 @@ const style = theme => ({
     // width: 1000
   },
   avatar: {
-    width: 150,
-    height: 150
+    width: 100,
+    height: 100,
+    [theme.breakpoints.up("md")]: {
+      width: 150,
+      height: 150
+    }
+  },
+  container: {
+    flexWrap: "nowrap"
   }
 });
 

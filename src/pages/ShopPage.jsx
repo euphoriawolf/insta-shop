@@ -11,7 +11,7 @@ const ShopPage = ({ classes }) => (
       <Nav />
       <div className={classes.root}>
         <Grid container direction="column" alignItems="stretch">
-          <Grid item>
+          <Grid item className={classes.profile}>
             <Profile />
           </Grid>
           <Grid item>
