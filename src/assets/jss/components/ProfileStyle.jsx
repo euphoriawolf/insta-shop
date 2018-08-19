@@ -16,7 +16,7 @@ const style = theme => ({
     }
   },
   container: {
-    flexWrap: "nowrap"
+    paddingTop: theme.spacing.unit * 4
   }
 });
 

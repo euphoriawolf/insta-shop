@@ -9,16 +9,16 @@ const Profile = ({ classes }) => (
         container
         alignItems="center"
         justify="space-around"
-        className={classes.container}
+        // className={classes.container}
       >
-        <Grid item>
+        <Grid item xs={4}>
           <Avatar
             alt="derrick's profile"
             src="https://instagram.flos5-1.fna.fbcdn.net/vp/a365baaf5d4b582a49286f22170b2415/5BD324DB/t51.2885-19/s150x150/20184784_277167179429968_6909898223670788096_a.jpg?_nc_eui2=AeFKYIKMpd8JEcROdKMMRnTbG-6YzLUh7i_JRrvHyuY7zMpNqhYj4DPA8qBQzr8XQZSLukMOGqLmcuIqUFAz4fMS7UD1ApheC5KvZB5uu5pWxQ"
             className={classes.avatar}
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={8}>
           <div>
             <Typography variant="subheading">@metaderrick</Typography>
             <Typography>
