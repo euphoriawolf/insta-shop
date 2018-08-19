@@ -1,11 +1,13 @@
 const style = theme => ({
   root: {
-    marginTop: theme.spacing.unit * 10
+    marginTop: theme.spacing.unit * 5
   },
   paper: {
-    minHeight: "200px",
-    width: "100%"
-    // width: 1000
+    minHeight: "260px",
+    width: "100%",
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "200px"
+    }
   },
   avatar: {
     width: 100,
@@ -16,7 +18,7 @@ const style = theme => ({
     }
   },
   container: {
-    paddingTop: theme.spacing.unit * 4
+    paddingTop: theme.spacing.unit * 8
   }
 });
 
