@@ -12,7 +12,7 @@ import PollIcon from "@material-ui/icons/PollOutlined";
 
 const Nav = ({ classes }) => (
   <div className={classes.root}>
-    <AppBar color="default">
+    <AppBar color="default" position="fixed">
       <Toolbar className={classes.toolBar}>
         <IconButton color="inherit">
           <PollIcon />
