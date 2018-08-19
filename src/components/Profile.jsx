@@ -9,7 +9,7 @@ const Profile = ({ classes }) => (
         container
         alignItems="center"
         justify="space-around"
-        // className={classes.container}
+        className={classes.container}
       >
         <Grid item xs={4}>
           <Avatar

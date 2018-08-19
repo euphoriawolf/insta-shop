@@ -11,8 +11,7 @@ const styles = theme => ({
   name: {
     flexGrow: 1,
     textAlign: "center"
-  },
-  storeIcon: {}
+  }
 });
 
 export default styles;
