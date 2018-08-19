@@ -3,17 +3,24 @@ import { ShopContextProvider } from "../Context/Shop";
 import { withStyles, Grid } from "@material-ui/core";
 import ShopPageStyle from "../assets/jss/pages/ShopPageStyle";
 import Nav from "../components/Nav";
+import Profile from "../components/Profile";
 
 const ShopPage = ({ classes }) => (
-  <div className={classes.root}>
+  <div>
     <ShopContextProvider>
-      <Grid container>
-        <Grid item>
-          <Nav />
+      <Nav />
+      <div className={classes.root}>
+        <Grid container direction="column" alignItems="stretch">
+          <Grid item>
+            <Profile />
+          </Grid>
+          <Grid item>
+            <div>
+              <p>this is a test </p>
+            </div>
+          </Grid>
         </Grid>
-        <Grid item />
-        <Grid item />
-      </Grid>
+      </div>
     </ShopContextProvider>
   </div>
 );
