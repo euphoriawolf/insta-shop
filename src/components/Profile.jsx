@@ -8,8 +8,8 @@ const Profile = ({ classes }) => (
       <Grid
         container
         alignItems="center"
-        justify="space-around"
         className={classes.container}
+        wrap="nowrap"
       >
         <Grid item xs={4}>
           <Avatar
@@ -19,7 +19,7 @@ const Profile = ({ classes }) => (
           />
         </Grid>
         <Grid item xs={8}>
-          <div>
+          <div className={classes.about}>
             <Typography variant="subheading">@metaderrick</Typography>
             <Typography>
               this is derrick's demo store for the shopfeed products
