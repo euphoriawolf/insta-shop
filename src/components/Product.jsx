@@ -3,7 +3,7 @@ import { Card, CardMedia, withStyles } from "@material-ui/core";
 
 const styles = {
   media: {
-    height: 150
+    height: 250
   }
 };
 

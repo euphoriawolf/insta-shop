@@ -20,8 +20,8 @@ const Profile = ({ classes }) => (
         </Grid>
         <Grid item xs={8}>
           <div className={classes.about}>
-            <Typography variant="subheading">@metaderrick</Typography>
-            <Typography>
+            <Typography variant="title">@metaderrick</Typography>
+            <Typography variant="subheading">
               this is derrick's demo store for the shopfeed products
             </Typography>
           </div>

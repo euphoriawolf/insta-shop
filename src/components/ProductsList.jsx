@@ -10,12 +10,7 @@ class ProductsList extends Component {
     return (
       <ShopContextConsumer>
         {({ products }) => (
-          <Grid
-            container
-            justify="space-around"
-            // spacing={8}
-            alignItems="center"
-          >
+          <Grid container justify="space-around" alignItems="center">
             {products.map(product => (
               <Grid item xs={6} md={4}>
                 <Product
