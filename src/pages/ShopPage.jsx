@@ -4,6 +4,7 @@ import { withStyles, Grid } from "@material-ui/core";
 import ShopPageStyle from "../assets/jss/pages/ShopPageStyle";
 import Nav from "../components/Nav";
 import Profile from "../components/Profile";
+import ProductsList from "../components/ProductsList"
 
 const ShopPage = ({ classes }) => (
   <div>
@@ -15,9 +16,7 @@ const ShopPage = ({ classes }) => (
             <Profile />
           </Grid>
           <Grid item>
-            <div>
-              <p>this is a test </p>
-            </div>
+            <ProductsList />
           </Grid>
         </Grid>
       </div>

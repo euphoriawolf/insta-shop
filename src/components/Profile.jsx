@@ -4,7 +4,7 @@ import ProfileStyle from "../assets/jss/components/ProfileStyle";
 
 const Profile = ({ classes }) => (
   <div className={classes.root}>
-    <Paper elevation={1} className={classes.paper}>
+    <div elevation={1} className={classes.paper}>
       <Grid
         container
         alignItems="center"
@@ -27,7 +27,7 @@ const Profile = ({ classes }) => (
           </div>
         </Grid>
       </Grid>
-    </Paper>
+    </div>
   </div>
 );
 
