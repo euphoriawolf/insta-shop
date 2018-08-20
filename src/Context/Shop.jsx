@@ -5,13 +5,16 @@ const ShopContext = React.createContext();
 
 export class ShopContextProvider extends Component {
   state = {
-    products: []
+    products: [],
+    loading: true
   };
   getProducts(storeId) {
     const url = "https://api.myjson.com/bins/8hupv";
     axios
       .get(url)
-      .then(respose => this.setState({ products: respose.data }))
+      .then(respose =>
+        this.setState({ products: respose.data, loading: false })
+      )
       .catch(err => console.log(err));
   }
   componentDidMount() {
@@ -19,11 +22,12 @@ export class ShopContextProvider extends Component {
   }
   render() {
     const { children } = this.props;
-    const { products } = this.state;
+    const { products, loading } = this.state;
     return (
       <ShopContext.Provider
         value={{
-          products: products
+          products: products,
+          loading: loading
         }}
       >
         {children}

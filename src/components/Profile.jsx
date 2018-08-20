@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Grid, Typography, Avatar, withStyles } from "@material-ui/core";
+import { Grid, Typography, Avatar, withStyles } from "@material-ui/core";
 import ProfileStyle from "../assets/jss/components/ProfileStyle";
 
 const Profile = ({ classes }) => (
